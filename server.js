@@ -21,9 +21,13 @@ const {CLIENT_URL} = process.env;
 console.log(CLIENT_URL);
 
 //Cors Option
+// const corsOption = {
+//     credentials:true,
+//     origin:['http://localhost:3000','http://1.1.1.111:3000', CLIENT_URL]
+// }
 const corsOption = {
     credentials:true,
-    origin:['http://localhost:3000','http://1.1.1.111:3000', CLIENT_URL]
+    origin:[CLIENT_URL]
 }
 
 //Configuration
